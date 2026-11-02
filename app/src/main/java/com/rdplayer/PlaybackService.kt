@@ -47,6 +47,16 @@ class PlaybackService : MediaSessionService() {
         mediaSession = null
         player = null
 
-        super.onDestroy()
+        
+override fun onDestroy() {
+    mediaSession?.release()
+    mediaSession = null
+
+    player?.release()
+    player = null
+
+    super.onDestroy()
+}
+
     }
 }
