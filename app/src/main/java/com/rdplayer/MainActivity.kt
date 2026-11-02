@@ -142,7 +142,7 @@ fun RDPlayerApp() {
                                     } catch (e: Exception) { message = "YouTube search error: ${e.message}" }
                                     loading = false
                                 }
-                            }) { Icon(Icons.Default.Search, "Search") },
+                            }) { Icon(Icons.Default.Search, "Search") } },
                             singleLine = true, shape = RoundedCornerShape(16.dp)
                         )
                         Spacer(Modifier.height(12.dp))
